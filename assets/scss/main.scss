@@ -6,4 +6,71 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './base/base.scss';
-@import './components/buttons.scss';
+@import './components/buttons';
+
+// Style pour les button du DarkMode
+// Styles pour le bouton de changement de thème
+
+body{
+
+
+
+    header {
+    
+        .logo{
+
+        }
+
+        .titre{
+
+        }
+
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+
+        .card{
+
+            &__div{
+
+                &__image{
+
+                }
+
+            }
+
+            &__text{
+
+                &__div{
+
+                    &__btn{
+
+                    }
+                }
+
+                &__name{
+
+                }
+
+                &__descri{
+
+                }
+
+                &__price{
+
+                }
+
+                &__origine{
+
+                }
+
+            }
+
+        }
+    }
+}
+

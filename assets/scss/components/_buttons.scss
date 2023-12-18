@@ -1,10 +1,11 @@
 // Style pour les button du DarkMode
 // Styles pour le bouton de changement de thème
+
 .theme-switch {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
   }
   
   .theme-switch__icon {

@@ -1,4 +1,5 @@
-export const plats = [
+
+const plats = [
     {
         picture: "img/plats/Bruschetta.jpg",
         categorie: "Entrée",
@@ -81,4 +82,3 @@ export const plats = [
 
     },
 ];
-
