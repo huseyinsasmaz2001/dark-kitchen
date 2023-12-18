@@ -1,4 +1,4 @@
-const plats = [
+export const plats = [
     {
         picture: "img/plats/Bruschetta.jpg",
         categorie: "Entrée",
@@ -78,7 +78,7 @@ const plats = [
         description: "Sélection de glaces artisanales italiennes.",
         price: "7.99 €",
         area: "Florence",
-        
+
     },
-   
 ];
+
