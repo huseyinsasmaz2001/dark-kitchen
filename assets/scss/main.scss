@@ -11,18 +11,19 @@
 // Style pour les button du DarkMode
 // Styles pour le bouton de changement de thème
 
-body{
+body {
 
+    header{
 
-
-    header {
-    
-        .logo{
+        .logo {
 
         }
 
-        .titre{
+        .titre {
 
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5%;
         }
 
     }
@@ -32,45 +33,43 @@ body{
         flex-wrap: wrap;
         height: 100%;
         width: 100%;
+        justify-content: center;
+        gap: 15px;
 
         .card{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            border:1px solid rgb(0, 0, 0);
+            &__div {
 
-            &__div{
-
-                &__image{
-
+                &__image {
+                    width: 100%;
                 }
 
             }
 
-            &__text{
-
-                &__div{
-
-                    &__btn{
-
+            &__text {
+                padding: 5%;
+                &__div {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    
+                    &__btn {
+                       
                     }
                 }
 
-                &__name{
+                &__name {}
 
-                }
+                &__descri {}
 
-                &__descri{
+                &__price {}
 
-                }
-
-                &__price{
-
-                }
-
-                &__origine{
-
-                }
+                &__origine {}
 
             }
 
         }
     }
 }
-

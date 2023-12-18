@@ -1,5 +1,6 @@
+import { plats } from './list.js';
 
-const plats = [
+/*const plats = [
     {
         picture: "assets/img/plats/Bruschetta.jpg",
         category: "Entrée",
@@ -81,7 +82,7 @@ const plats = [
         area: "Florence",
 
     },
-];
+];*/
 
 function ElementClass(elementName, className){
     let element=document.createElement(elementName);
@@ -100,8 +101,9 @@ document.addEventListener('DOMContentLoaded',function(){
             
 
         const logo=ElementClass('img','logo');
+        logo.src="";
         const titre=ElementClass('h1','titre');
-        titre.innerText = `blabla`;
+        titre.innerText = `Le meilleur resto italien`;
         
         const main=document.querySelector('main');
         main.classList.add('container');
@@ -118,24 +120,24 @@ document.addEventListener('DOMContentLoaded',function(){
 
                     const image=ElementClass('img','card__div__image');
                     image.src=dishes.picture;
-                    const article=ElementClass('article','card__text');
+                const article=ElementClass('article','card__text');
 
-                const div2=ElementClass('div','card__text__div');
+                    const div2=ElementClass('div','card__text__div');
 
-                    const btncat=ElementClass('button','card__text__div__btn');
-                    btncat.innerHTML=dishes.category;
+                        const btncat=ElementClass('button','card__text__div__btn');
+                        btncat.innerHTML=dishes.category;
             
-                const div3=ElementClass('div','card__text__name');
-                div3.innerText=`Nom du plat: ${dishes.name}`;
+                    const div3=ElementClass('div','card__text__name');
+                    div3.innerText=`Nom du plat: ${dishes.name}`;
 
-                const div4=ElementClass('div','card__text__descri');
-                div4.innerText=`Description du plat: ${dishes.description}`;
+                    const div4=ElementClass('div','card__text__descri');
+                    div4.innerText=`Description du plat: ${dishes.description}`;
 
-                const div5=ElementClass('div','card__text__price');
-                div5.innerText=`Prix: ${dishes.price}`;
+                    const div5=ElementClass('div','card__text__price');
+                    div5.innerText=`Prix: ${dishes.price}`;
 
-                const div6=ElementClass('div','card__text__name');
-                div6.innerText=`Origine du plat: ${dishes.area}`;
+                    const div6=ElementClass('div','card__text__origine');
+                    div6.innerText=`Origine du plat: ${dishes.area}`;
 
     header.append(logo);
     header.append(titre);
