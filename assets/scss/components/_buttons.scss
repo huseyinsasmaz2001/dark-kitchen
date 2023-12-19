@@ -1,22 +1,43 @@
 // Style pour les button du DarkMode
 // Styles pour le bouton de changement de thème
+
+
+
 .theme-switch {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
   
-  .theme-switch__icon {
-    position:relative;
-    bottom: 40%; // Ajustez selon votre mise en page
-    left: 45%;
+  
+  &__icon {
+    position: relative;
+    left: 90%;
     width: 30px;
     height: 30px;
-    /* Ajoutez les styles pour les icônes claires et sombres dans vos images */
     cursor: pointer;
   }
-  
+
+  .logo{
+    padding-right: 50%;
+    padding-top: 1%;
+  }
+
+  .logoPanier{
+    padding-right: 3%;
+    cursor: pointer;
+  }
+
+  .divBtn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-right: 5%;
+  }
+
+
+}
+
   // Styles pour les différents thèmes
   .dark-mode {
     background-color: $dark-mode-bg;

@@ -5,7 +5,7 @@ themeToggle.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
 
   // Changer la source de l'image en fonction du thème actif
-  //blabla
+  
   if (body.classList.contains('dark-mode')) {
     themeToggle.src = 'assets/img/iconMode/soleil.png'; // Changer vers l'image sombre
   } else {

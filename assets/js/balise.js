@@ -12,7 +12,6 @@ function ElementClass(elementName, className) {
 document.addEventListener('DOMContentLoaded', function () {
 
 
-
     const header = document.querySelector('header');
     /*const theme=ElementClass('div','theme-switch');
     const mode=ElementClass('img','theme-switch__icon');
@@ -25,13 +24,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalElement = document.createElement('div');
     totalElement.id = 'total';
 
-
+    const themeSwitch = document.querySelector('div');
+    const logoPanier = ElementClass('img','logoPanier');
+    logoPanier.src = "assets/img/panier.png";
     const logo = ElementClass('img', 'logo');
-    logo.src = "";
+    logo.src = "assets/img/logoheader.jpg";
+
+    const divBtn = ElementClass('div','divBtn');
+    const btnentre = ElementClass('button', 'btnentre');
+    btnentre.innerHTML = "Entrées";
+    const btnprincipal = ElementClass('button', 'btnprincipal');
+    btnprincipal.innerHTML = "Plats principals";
+    const btndessert = ElementClass('button', 'btndessert');
+    btndessert.innerHTML = "Dessert";
+
+    
     const titre = ElementClass('h1', 'titre');
     titre.innerText = `Gusto Italiano Express`;
     const para = ElementClass('p', 'description');
-    para.innerText = `Le mystère de l'Italie s'invite chez vous avec notre dark kitchen, Pasta Nocturna. Dans cet antre culinaire, des chefs passionnés concoctent des délices italiens authentiques, de pizzas artisanales aux pâtes fraîches exquises. Commandez en ligne et plongez dans une expérience gustative immersive, où chaque plat transporte l'essence de l'Italie à votre porte, éclairant vos soirées de saveurs inoubliables.`
+    para.innerText = `Le mystère de l'Italie s'invite chez vous avec notre dark kitchen, Gusto Italiano Express. Dans cet antre culinaire, des chefs passionnés concoctent des délices italiens authentiques, de pizzas artisanales aux pâtes fraîches exquises. Commandez en ligne et plongez dans une expérience gustative immersive, où chaque plat transporte l'essence de l'Italie à votre porte, éclairant vos soirées de saveurs inoubliables.`
 
     const main = document.querySelector('main');
     main.classList.add('container');
@@ -78,11 +89,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         });
 
-        header.append(logo);
-        header.append(titre);
-        header.append(para);
+        themeSwitch.append(logo);
+        themeSwitch.append(divBtn);
+        divBtn.append(btnentre);
+        divBtn.append(btnprincipal);
+        divBtn.append(btndessert);
+        themeSwitch.append(logoPanier);
         header.append(panierElement);
         header.append(totalElement);
+        header.append(titre);
+        header.append(para);
         //header.append(theme);
         //theme.append(mode);
         main.append(section);
