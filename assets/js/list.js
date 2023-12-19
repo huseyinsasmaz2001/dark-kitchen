@@ -52,7 +52,7 @@ export const plats = [
         description: "Plat de viande mijotée, généralement de la jarret de veau, servi avec une sauce.",
         price: "18.99 €",
         area: "Milan",
-        
+        add:"ADD",
     },
     {
         picture: "assets/img/plats/tiramisu.jpg",
