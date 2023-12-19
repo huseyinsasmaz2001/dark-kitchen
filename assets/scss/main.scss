@@ -7,6 +7,7 @@
 @import './utils/mixins';
 @import './base/base.scss';
 @import './components/buttons';
+@import'assets/scss/header.scss';
 
 
 // Style pour les button du DarkMode
@@ -14,21 +15,7 @@
 
 body {
 
-    header{
-
-        // .logo {
-
-        // }
-
-        .titre {
-
-            display: flex;
-            justify-content: center;
-            margin-bottom: 5%;
-        }
-
-    }
-
+    
     .container{
         display: flex;
         flex-wrap: wrap;

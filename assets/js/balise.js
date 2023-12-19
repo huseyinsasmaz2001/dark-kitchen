@@ -1,7 +1,7 @@
 import { plats } from './list.js';
 import { ajouterAuPanier, afficherPanier, calculerTotal } from './panier.js';
 
-
+// fonction qui crée les élements et les classes
 function ElementClass(elementName, className) {
     let element = document.createElement(elementName);
     element.classList.add(className);
