@@ -1,6 +1,5 @@
 // Style pour les button du DarkMode
 // Styles pour le bouton de changement de thème
-
 .theme-switch {
     display: flex;
     justify-content: center;
@@ -23,6 +22,8 @@
     background-color: $dark-mode-bg;
     color: $dark-mode-text;
   }
+
+  
   
   .normal-mode {
     background-color: $normal-mode-bg;
