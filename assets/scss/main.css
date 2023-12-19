@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -84,6 +85,9 @@ body header .titre {
   margin-bottom: 5%;
 }
 
+body {
+  font-family: Cursive;
+}
 body .container {
   display: flex;
   flex-wrap: wrap;
@@ -135,9 +139,15 @@ body .container .card__text__name {
 }
 body .container .card__text__descri {
   font-size: medium;
-  margin: 3px;
-  flex: 1;
+  margin: 6px;
 }
 body .container .card__text__price {
-  margin: 5px;
+  margin: 20px;
+}
+body .container .card__text__origine {
+  margin: 20px;
+}
+body .container .card__text__add {
+  margin: 20px;
+  color: red;
 }/*# sourceMappingURL=main.css.map */

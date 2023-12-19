@@ -9,11 +9,15 @@
 @import './components/buttons';
 @import'./header.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
 
 // Style pour les button du DarkMode
 // Styles pour le bouton de changement de thème
 
 body {
+    font-family: Cursive;
+
 
     .container {
         display: flex;
@@ -82,17 +86,24 @@ body {
 
                 &__descri {
                     font-size: medium;
-                    margin: 3px;
-                    flex: 1;
+                    margin: 6px;
+                  
 
                 }
 
                 &__price {
-                    margin: 5px;
+                    margin: 20px;
 
                 }
 
-                // &__origine {}
+                &__origine {
+                    margin: 20px;
+                }
+
+                &__add {
+                    margin: 20px;
+                    color: red;
+                }
 
             }
 
