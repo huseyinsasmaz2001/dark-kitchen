@@ -7,7 +7,7 @@ export const plats = [
         description: "Pain grillé frotté à l'ail et garni de tomates, basilic et huile d'olive.",
         price: "8.99 €",
         area: "Rome",
-        
+        add:"ADD",
     },
     {
         picture: "assets/img/plats/salade-capresse.jpg",
@@ -16,7 +16,7 @@ export const plats = [
         description: "Salade de tomates, mozzarella et basilic frais.",
         price: "9.99 €",
         area: "Ile de Capri",
-        
+        add:"ADD",
     },
     {
         picture: "assets/img/plats/Antipasto.jpg",
@@ -25,7 +25,7 @@ export const plats = [
         description: "Assortiment de fromages, charcuteries, olives et légumes marinés.",
         price: "12.99 €",
         area: "Italie",
-        
+        add:"ADD",
     },
     {
         picture: "assets/img/plats/carbonara.jpg",
@@ -34,7 +34,7 @@ export const plats = [
         description: "Pâtes avec une sauce crémeuse, du lard et du fromage pecorino.",
         price: "14.99 €",
         area: "Rome",
-        
+        add:"ADD",
     },
     {
         picture: "assets/img/plats/Risotto.jpg",
@@ -43,7 +43,7 @@ export const plats = [
         description: "Riz crémeux avec du safran et du parmesan.",
         price: "16.99 €",
         area: "Milan",
-        
+        add:"ADD",
     },
     {
         picture: "assets/img/plats/osso-bucco.jpeg",
@@ -61,7 +61,7 @@ export const plats = [
         description: "Dessert au café et mascarpone, saupoudré de cacao.",
         price: "9.99 €",
         area: "Trévise",
-        
+        add:"ADD",
     },
     {
         picture: "assets/img/plats/pana.jpg",
@@ -70,7 +70,7 @@ export const plats = [
         description: "Dessert crémeux à la vanille avec coulis de fruits rouges.",
         price: "8.99 €",
         area: "Piémont",
-        
+        add:"ADD",
     },
     {
         picture: "assets/img/plats/gelato.jpg",
@@ -79,6 +79,6 @@ export const plats = [
         description: "Sélection de glaces artisanales italiennes.",
         price: "7.99 €",
         area: "Florence",
-
+        add:"ADD",
     },
 ];
