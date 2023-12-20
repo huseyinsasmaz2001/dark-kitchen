@@ -1,0 +1,64 @@
+footer {
+    display: flex;
+    margin-top: 40px;
+
+    .nous {
+        background-color: rgb(00, 140, 69);
+        box-sizing: border-box;
+        box-shadow: 10px -7px 10px rgba(00, 140, 69, 0.3);
+        border-radius: 0% 20%;
+        padding: 25px;
+        color: white;
+        text-align: center;
+        flex-grow: 1;
+
+        &__logo {
+            margin-top: 30px;
+            width: 30%;
+        }
+    }
+
+    .contact {
+        background-color: rgb(244, 245, 240);
+        box-sizing: border-box;
+        box-shadow: 10px -7px 10px rgba(157, 158, 150, 0.3);
+        border-radius: 0% 20%;
+        padding: 25px;
+        color: black;
+        flex-grow: 1;
+
+        &__title {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        &__block {
+            padding-left: 30%;
+        }
+
+        &__lien {
+            text-decoration: none;
+            color: rgb(00, 140, 69);
+
+            &:hover {
+                color: rgb(205, 33, 42);
+            }
+        }
+    }
+
+    .partenariat {
+        background-color: rgb(205, 33, 42);
+        box-sizing: border-box;
+        box-shadow: 10px -7px 10px rgba(205, 33, 42, 0.3);
+        border-radius: 0% 20%;
+        padding: 25px;
+        color: white;
+        text-align: center;
+        flex-grow: 1;
+
+        &__logo {
+            margin-top: 60px;
+            width: 40%;
+        }
+    }
+}
