@@ -1,6 +1,5 @@
 //Fichier scss qui va importer tous les autres
 
-
 // Attention à l'ordre des imports (ex : ne pas mettre un fichiers qui a besoins des variables avant l'import de celles-ci
 @import './vendors/reset';
 @import './utils/variables';
@@ -11,36 +10,61 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
-
 // Style pour les button du DarkMode
 // Styles pour le bouton de changement de thème
 
 body {
     font-family: Cursive;
 
-
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        height: 100%;
-        max-width: 100%;
-        justify-content: center;
-        gap: 15px;
+
         padding-top: 3%;
-        
-        .divBtn{
-            display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        h2{
+            font-size: 50px;
+        }
+
+        .divBtn {
             justify-content: space-evenly;
-            width: 30%;
+            width: 20%;
             padding-left: 40%;
             padding-right: 40%;
-          }
-        
+            .btnall{
+                padding: 2px 15px;
+                margin: 2%;
+                border: 2px solid rgb(205, 33, 42);
+                font-size: large;
+            }
+            .btnentre{
+                padding: 2px 15px;
+                margin: 2%;
+                border: 2px solid rgb(205, 33, 42);
+                font-size: large;
+            }
+            .btnprincipal{
+                padding: 2px 15px;
+                margin: 2%;
+                border: 2px solid rgb(205, 33, 42);
+                font-size: large;
+            }
+            .btndessert{
+                padding: 2px 15px;
+                margin: 2%;
+                border: 2px solid rgb(205, 33, 42);
+                font-size: large;
+            }
+            
+        }
 
         .card {
             display: flex;
             flex-direction: column;
             width: 25%;
+            min-width: 270px;
             border: 3px solid rgb(206, 41, 41);
             background-color: rgb(00, 140, 69);
             box-sizing: border-box;
@@ -48,7 +72,6 @@ body {
             color: white;
             border-radius: 0% 20%;
             text-align: center;
-            
 
 
 
@@ -77,13 +100,6 @@ body {
                     justify-content: space-around;
 
 
-
-                    &__btn {
-                        border: 2px solid rgb(205, 33, 42);
-                        margin: 2%;
-
-
-                    }
                 }
 
                 &__name {
@@ -95,7 +111,6 @@ body {
                 &__descri {
                     font-size: medium;
                     margin: 6px;
-                  
 
                 }
 
@@ -109,8 +124,13 @@ body {
                 }
 
                 &__add {
+                    padding: 10px 15px;
                     margin: 20px;
-                    color: red;
+                    background-color: rgb(206, 41, 41);
+                    color: white;
+                    
+
+
                 }
 
             }
