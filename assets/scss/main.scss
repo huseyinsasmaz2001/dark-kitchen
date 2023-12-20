@@ -25,9 +25,17 @@ body {
         height: 100%;
         max-width: 100%;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
+        padding-top: 3%;
         
-
+        .divBtn{
+            display: flex;
+            justify-content: space-evenly;
+            width: 30%;
+            padding-left: 40%;
+            padding-right: 40%;
+          }
+        
 
         .card {
             display: flex;
