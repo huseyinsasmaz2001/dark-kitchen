@@ -1,5 +1,7 @@
 footer {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 40px;
 
     .nous {
@@ -11,6 +13,7 @@ footer {
         color: white;
         text-align: center;
         flex-grow: 1;
+        min-width: 33%;
 
         &__logo {
             margin-top: 30px;
@@ -25,6 +28,8 @@ footer {
         border-radius: 0% 20%;
         padding: 25px;
         color: black;
+        min-width: 33%;
+
         flex-grow: 1;
 
         &__title {
@@ -33,7 +38,8 @@ footer {
         }
 
         &__block {
-            padding-left: 30%;
+            margin-left: 25%;
+            
         }
 
         &__lien {
@@ -54,6 +60,7 @@ footer {
         padding: 25px;
         color: white;
         text-align: center;
+        min-width: 33%;
         flex-grow: 1;
 
         &__logo {
