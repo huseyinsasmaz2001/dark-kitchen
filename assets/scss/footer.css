@@ -1,5 +1,7 @@
 footer {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 footer .nous {
@@ -11,6 +13,7 @@ footer .nous {
   color: white;
   text-align: center;
   flex-grow: 1;
+  min-width: 33%;
 }
 footer .nous__logo {
   margin-top: 30px;
@@ -23,6 +26,7 @@ footer .contact {
   border-radius: 0% 20%;
   padding: 25px;
   color: black;
+  min-width: 33%;
   flex-grow: 1;
 }
 footer .contact__title {
@@ -30,7 +34,7 @@ footer .contact__title {
   padding-bottom: 15px;
 }
 footer .contact__block {
-  padding-left: 30%;
+  margin-left: 25%;
 }
 footer .contact__lien {
   text-decoration: none;
@@ -47,6 +51,7 @@ footer .partenariat {
   padding: 25px;
   color: white;
   text-align: center;
+  min-width: 33%;
   flex-grow: 1;
 }
 footer .partenariat__logo {
