@@ -4,6 +4,12 @@ footer {
   flex-wrap: wrap;
   margin-top: 40px;
 }
+@media screen and (max-width: 954px) {
+  footer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
 footer .nous {
   background-color: rgb(0, 140, 69);
   box-sizing: border-box;

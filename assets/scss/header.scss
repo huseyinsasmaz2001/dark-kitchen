@@ -1,8 +1,10 @@
-@font-face {
-    font-family: 'Italiana-Regular';
-    src: url("assets/scss/Italiana-Regular.ttf");
-}
+@import './utils/variables';
+@import './utils/mixins';
 
+@font-face {
+    font-family: 'Sevillana';
+    src: url("Sevillana-Regular.ttf");
+}
 
 body {
     #entete{
@@ -16,12 +18,26 @@ body {
             margin-bottom: 2%;
 
             .titre {
-                padding-top: 2%;
+                font-family: 'Sevillana';
+                padding-top: 1%;
                 padding-left: 2%;
                 color: rgb(206, 41, 41);
+                font-size: 50px;
+                font-style: italic;
+
+                @include responsive-mobile($mobile) {
+                    padding-top: 0%;
+                    padding-left: 0%;
+                    text-align: center;
+                }
             }
 
+            .logo{
 
+                @include responsive-mobile($mobile){
+                    padding-left: 5%;
+                }
+            }
 
         }
 
@@ -34,6 +50,10 @@ body {
             color: white;
             font-style: italic;
             letter-spacing: 1.5px;
+
+            @include responsive-mobile($mobile) {
+                margin: 0% 5% 0% 15%;
+            }
 
             .description {
 

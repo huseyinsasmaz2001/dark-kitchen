@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Italiana-Regular";
-  src: url("assets/scss/Italiana-Regular.ttf");
+  font-family: "Sevillana";
+  src: url("Sevillana-Regular.ttf");
 }
 body #entete {
   padding: 0.5% 0% 5% 1%;
@@ -12,9 +12,24 @@ body #entete .divHeader {
   margin-bottom: 2%;
 }
 body #entete .divHeader .titre {
-  padding-top: 2%;
+  font-family: "Sevillana";
+  padding-top: 1%;
   padding-left: 2%;
   color: rgb(206, 41, 41);
+  font-size: 50px;
+  font-style: italic;
+}
+@media screen and (max-width: 540px) {
+  body #entete .divHeader .titre {
+    padding-top: 0%;
+    padding-left: 0%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  body #entete .divHeader .logo {
+    padding-left: 5%;
+  }
 }
 body #entete .divPara {
   border: 4px solid rgb(206, 41, 41);
@@ -24,6 +39,11 @@ body #entete .divPara {
   color: white;
   font-style: italic;
   letter-spacing: 1.5px;
+}
+@media screen and (max-width: 540px) {
+  body #entete .divPara {
+    margin: 0% 5% 0% 15%;
+  }
 }
 body #entete .divPara .description {
   text-align: center;

@@ -1,7 +1,8 @@
 // Style pour les button du DarkMode
 // Styles pour le bouton de changement de thème
 
-
+@import '../utils/_variables.scss';
+@import '../utils/_mixins.scss';
 
 .theme-switch {
   display: flex;
@@ -16,12 +17,25 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
+
+    @include responsive-mobile($mobile) {
+        left:80%;
+    }
+    @include responsive-desk($break-desktop) {
+      left:80%;
+  }
   }
 
 
   .logoPanier{
     padding-left: 80%;
     cursor: pointer;
+    @include responsive-mobile($mobile) {
+      padding-left:55%;
+    }
+    @include responsive-desk($break-desktop) {
+      left:80%;
+    }
   }
 
 

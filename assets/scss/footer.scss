@@ -1,8 +1,16 @@
+@import './utils/variables';
+@import './utils/mixins';
+
 footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
+
+    @include responsive-desk($break-desktop){
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 
     .nous {
         background-color: rgb(00, 140, 69);

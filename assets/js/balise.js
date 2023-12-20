@@ -46,13 +46,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const h2main = document.createElement('h2');
     h2main.innerText = `Menu`;
     const divBtn = ElementClass('div', 'divBtn');
-    const btnall = ElementClass('button', 'btnall');
+    const btnall = ElementClass('button', 'divBtn__btn');
     btnall.innerHTML = "Menu";
-    const btnentre = ElementClass('button', 'btnentre');
+    const btnentre = ElementClass('button', 'divBtn__btn');
     btnentre.innerHTML = "Entrée";
-    const btnprincipal = ElementClass('button', 'btnprincipal');
+    const btnprincipal = ElementClass('button', 'divBtn__btn');
     btnprincipal.innerHTML = "Plat principal";
-    const btndessert = ElementClass('button', 'btndessert');
+    const btndessert = ElementClass('button', 'divBtn__btn');
     btndessert.innerHTML = "Dessert";
 
     main.append(h2main);
