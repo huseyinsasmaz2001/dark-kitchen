@@ -28,7 +28,7 @@ body {
         padding-top: 3%;
 
         h2{
-            color: rgb(206, 41, 41);
+            color: $primary-red;
             font-size: 40px;
             text-decoration: underline;
         }
@@ -52,30 +52,29 @@ body {
 
             &__btn{
                 padding: 2%;
-                border: 3px solid rgb(206, 41, 41);
-                color: white;
-                background-color: rgb(00, 140, 69);
+                border: 3px solid $primary-red;
+                color: $primary-white;
+                background-color: $primary-green;
                 border-radius: 3px;
                 font-size: 16px;
 
                 &:hover{
-                    background-color: darken(rgb(00, 140, 69),10%);
+                    background-color: darken($primary-green,10%);
                 }
             }
             
           }
         
-
         .card {
             display: flex;
             flex-direction: column;
             width: 100%;
             max-width: 365px;
-            border: 3px solid rgb(206, 41, 41);
-            background-color: rgb(00, 140, 69);
+            border: 3px solid $primary-red;
+            background-color: $primary-green;
             box-sizing: border-box;
-            box-shadow: 0 13px 15px rgba(205, 33, 42, 0.6);
-            color: white;
+            box-shadow: 0 13px 15px $color-shadow-card;
+            color: $primary-white;
             border-radius: 0% 20%;
             text-align: center;
 
@@ -90,7 +89,7 @@ body {
 
                     object-fit: cover;
                     border-radius: 0% 20%;
-                    border: 2px solid rgb(255, 255, 255);
+                    border: 2px solid $primary-white;
                 }
 
             }
@@ -102,12 +101,12 @@ body {
                     display: flex;
                     flex-direction: row-reverse;
                     justify-content: space-around;
-                    color: rgb(206, 41, 41);
+                    color: $primary-red;
                     padding-bottom: 5%;
                     font-size: 25px;
 
                     &__btn {
-                        border: 2px solid rgb(205, 33, 42);
+                        border: 2px solid $primary-red;
                         margin: 2%;
 
                     }
@@ -123,8 +122,7 @@ body {
                 &__descri {
                     font-size: medium;
                     margin: 6px;
-                  
-
+                
                 }
 
                 &__price {
@@ -138,12 +136,12 @@ body {
 
                 &__add {
                     margin: 20px;
-                    color: white;
+                    color: $primary-white;
                     padding: 10px 15px;
-                    background-color: rgb(206, 41, 41);
+                    background-color: $primary-red;
 
                     &:hover{
-                        background-color: darken(rgb(206, 41, 41),10%);
+                        background-color: darken($primary-red,10%);
                     }
                 }
 

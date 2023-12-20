@@ -38,18 +38,15 @@
     }
   }
 
-
-
 }
-
-  // Styles pour les différents thèmes
+  // Styles mode sombre
   .dark-mode {
     background-color: $dark-mode-bg;
     color: $dark-mode-text;
   }
 
   
-  // style normal
+  // style mode clair
   .normal-mode {
     background-color: $normal-mode-bg;
     color: $normal-mode-text;

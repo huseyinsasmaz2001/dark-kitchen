@@ -13,12 +13,12 @@ footer {
     }
 
     .nous {
-        background-color: rgb(00, 140, 69);
+        background-color: $primary-green;
         box-sizing: border-box;
-        box-shadow: 10px -7px 10px rgba(00, 140, 69, 0.3);
+        box-shadow: 10px -7px 10px $color-shadow-nous;
         border-radius: 0% 20%;
         padding: 25px;
-        color: white;
+        color: $primary-white;
         text-align: center;
         flex-grow: 1;
         min-width: 33%;
@@ -30,9 +30,9 @@ footer {
     }
 
     .contact {
-        background-color: rgb(244, 245, 240);
+        background-color: $primary-white;
         box-sizing: border-box;
-        box-shadow: 10px -7px 10px rgba(157, 158, 150, 0.3);
+        box-shadow: 10px -7px 10px $color-shadow-contact;
         border-radius: 0% 20%;
         padding: 25px;
         color: black;
@@ -52,21 +52,21 @@ footer {
 
         &__lien {
             text-decoration: none;
-            color: rgb(00, 140, 69);
+            color: $primary-green;
 
             &:hover {
-                color: rgb(205, 33, 42);
+                color: $primary-red;
             }
         }
     }
 
     .partenariat {
-        background-color: rgb(205, 33, 42);
+        background-color: $primary-red;
         box-sizing: border-box;
-        box-shadow: 10px -7px 10px rgba(205, 33, 42, 0.3);
+        box-shadow: 10px -7px 10px $color-shadow-partenariat;
         border-radius: 0% 20%;
         padding: 25px;
-        color: white;
+        color: $primary-white;
         text-align: center;
         min-width: 33%;
         flex-grow: 1;

@@ -36,7 +36,7 @@ body #entete .divPara {
   padding: 2%;
   margin: 0% 20% 0% 20%;
   background-color: rgb(0, 140, 69);
-  color: white;
+  color: #f5f5f5;
   font-style: italic;
   letter-spacing: 1.5px;
 }

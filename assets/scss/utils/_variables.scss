@@ -9,9 +9,13 @@ $font-name :'Playfair Display', serif;
 
 //Colors
 
-$primary-red : #6e1b10;
-$primary-dark : #212021;
+$primary-red : rgb(206, 41, 41);
+$primary-green :rgb(0, 140, 69);
 $primary-white : #f5f5f5;
+$color-shadow-card : rgba(205, 33, 42, 0.6);
+$color-shadow-nous : rgba(00, 140, 69, 0.3);
+$color-shadow-contact : rgba(157, 158, 150, 0.3);
+$color-shadow-partenariat : rgba(205, 33, 42, 0.3);
 
 //Spacings
 $space-m: 1rem;
