@@ -107,7 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         });
-    };
+   
+
 
 themeSwitch.append(logoPanier);
 header.append(panierElement);
@@ -119,7 +120,6 @@ header.append(divPara);
 divPara.append(para);
 //header.append(theme);
 //theme.append(mode);
-
 main.append(section);
 section.append(div1);
 div1.append(image);
@@ -130,8 +130,13 @@ article.append(div3);
 article.append(div4);
 article.append(div5);
 article.append(div6);
-article.append(btnadd);
+article.append(btnadd); 
 
+}
+});
+
+
+/*
 btnall.classList.add('trie-btn');
 btnentre.classList.add('trie-btn');
 btnprincipal.classList.add('trie-btn');
@@ -207,3 +212,4 @@ function TriePlats(category) {
     }
 
 }
+*/
