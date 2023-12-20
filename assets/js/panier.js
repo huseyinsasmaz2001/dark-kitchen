@@ -1,48 +1,61 @@
 let panierItems = [];
 
-
-
 function augmenterQuantite(index) {
     if (index >= 0 && index < panierItems.length) {
-        const elementHTML = document.getElementById(`quantite-${index}`); // Obtenez l'élément HTML pour la quantité
-        panierItems[index].quantity += 1;
-        if (elementHTML && !isNaN(panierItems[index].quantity)) {
-            elementHTML.innerText = parseInt(panierItems[index].quantity, 10);
+        const item = panierItems[index];
+        const prixAvant = item.price * item.quantity;
+
+        item.quantity += 1;
+
+        const elementHTML = document.getElementById(`quantite-${index}`);
+        if (elementHTML && !isNaN(item.quantity)) {
+            elementHTML.innerText = parseInt(item.quantity);
         }
-        mettreAJourPanierEtTotal();
+
+        const prixApres = item.price * item.quantity;
+        const difference = prixApres - prixAvant;
+
+        afficherTotal(calculerTotal() + ' €');
     }
 }
 
 function diminuerQuantite(index) {
     if (index >= 0 && index < panierItems.length && panierItems[index].quantity > 1) {
-        const elementHTML = document.getElementById(`quantite-${index}`);
-        panierItems[index].quantity -= 1;
+        const item = panierItems[index];
+        const prixAvant = item.price * item.quantity;
 
+        item.quantity -= 1;
+
+        const elementHTML = document.getElementById(`quantite-${index}`);
         if (elementHTML) {
-            elementHTML.innerText = parseInt(panierItems[index].quantity, 10);
+            elementHTML.innerText = parseInt(item.quantity, 10);
         }
-        mettreAJourPanierEtTotal();
+
+        const prixApres = item.price * item.quantity;
+        const difference = prixApres - prixAvant;
+
+        afficherTotal(calculerTotal() + ' €');
     }
 }
-function mettreAJourPanierEtTotal() {
+
+// Reste du code inchangé...
+
+
+function mettreAJourPanierEtTotal(item) {
     const elementHTML = document.getElementById('panier');
     if (!elementHTML) return;
 
-    const totalAvant = calculerTotal();
-
     panierItems = panierItems.filter(item => item.quantity > 0);
-
     afficherPanier(elementHTML);
-
     const nouveauTotal = calculerTotal();
+ 
 
-    if (totalAvant !== nouveauTotal) {
-        afficherTotal(nouveauTotal);
-    }
-}
+    afficherTotal(nouveauTotal);
+ }
+
 
 function afficherTotal(total) {
-    const totalElement = document.getElementById('total'); // Assurez-vous d'avoir un élément avec l'ID "total"
+    const totalElement = document.getElementById('total');
     if (totalElement) {
         totalElement.innerText = `Total: ${total}`;
     }
@@ -51,17 +64,19 @@ function afficherTotal(total) {
 function calculerTotal() {
     let total = 0;
 
-    for (let i = 0; i < panierItems.length; i++) {
-        // Convertir le prix en réel avant de l'ajouter au total
-        const prixElement = parseFloat(panierItems[i].price);
+    panierItems.forEach(item => {
+        const prix = parseFloat(item.price);
+        const quantite = parseInt(item.quantity, 10);
 
-        if (!isNaN(prixElement)) {
-            total += prixElement;
+        if (!isNaN(prix) && !isNaN(quantite)) {
+            const montant = prix * quantite;
+            total += montant;
         }
-    }
+    });
 
     return total;
 }
+
 
 function ajouterAuPanier(plat) {
     const indexExistant = panierItems.findIndex(item => item.name === plat.name);
@@ -69,8 +84,9 @@ function ajouterAuPanier(plat) {
     if (indexExistant !== -1) {
         augmenterQuantite(indexExistant);
     } else {
-        plat.quantity = 1;
-        panierItems.push(plat);
+        // Utilisation de Object.assign pour éviter de modifier l'objet d'origine
+        const newPlat = Object.assign({}, plat, { quantity: 1 }); // Initialisation de quantity à 1
+        panierItems.push(newPlat);
         mettreAJourPanierEtTotal();
     }
 }
@@ -108,11 +124,13 @@ function afficherPanier(elementHTML) {
         supprimerButton.addEventListener('click', () => {
             if (index >= 0 && index < panierItems.length) {
                 panierItems.splice(index, 1);
+                item.quantity = 0;
                 mettreAJourPanierEtTotal();
             }
 
             // Actualiser l'affichage du panier après la suppression
             afficherPanier(elementHTML);
+            afficherTotal(calculerTotal() + ' €');
         });
 
         listItem.appendChild(supprimerButton);
